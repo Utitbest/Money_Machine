@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background-color: blue; */
 }
 
 .imo{
@@ -40,9 +39,96 @@
 }
 
 
+
 .Okon{
-    height: 500px;
     width: 100%;
-    border: groove;
+    height: 60vh;
+    background-color: green;
+    display: flex;
+    
+    flex-flow: column wrap;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
-/* 0123456789abcdeff */
+
+.twins{
+    height: 50px;
+    display: flex ;
+    /* width: calc( 100% / 5); */
+    width: 100px;
+    border: groove yellow;
+}
+
+
+header{
+    width: 100%;
+    height: 56px;
+    background-color: #1d2a35;
+    display: flex;
+}
+.logo{
+    height: 100%;
+    width: 70px;
+}
+
+.logo > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar{
+    display: flex;
+    flex: 1;
+}
+.navbar > nav{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.navbar > nav > ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.navbar > nav > ul > li{
+    list-style:none;
+    color: white;
+    height: 100%;
+    width: calc(100% / 4);
+    display: flex;
+    border: groove;
+    justify-content: center;
+    align-items: center;
+    background-color: seagreen;
+}
+
+
+.wraper{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signupInline{
+    display: inline;
+    background-color: seagreen;
+    color: white;
+    border: none;
+    padding:10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
