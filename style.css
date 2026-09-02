@@ -45,20 +45,18 @@
     height: 60vh;
     background-color: green;
     display: flex;
-    
+    border: groove;
     flex-flow: column wrap;
-
     flex-direction: column;
     flex-wrap: wrap;
-
-
+    position: relative;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
 .twins{
-    height: 50px;
+    height: 100px;
     display: flex ;
     /* width: calc( 100% / 5); */
     width: 100px;
@@ -96,7 +94,7 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
     height: 100%;
 }
 
@@ -104,14 +102,16 @@ header{
     list-style:none;
     color: white;
     height: 100%;
-    width: calc(100% / 4);
+    /* width: calc(80% / 4); */
     display: flex;
-    border: groove;
     justify-content: center;
+    padding-inline:1em ;
     align-items: center;
-    background-color: seagreen;
+    user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    /* background-color: seagreen; */
 }
-
 
 .wraper{
     width: 120px;
@@ -132,3 +132,61 @@ header{
     font-weight: 600;
 }
 
+/* .postions{
+    position: sticky;
+    top: 0 ;
+    background-color: blue;
+} */
+
+.navbar > nav > ul > li::after{
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white;
+}
+
+.searchbar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-inline: 1em;
+}
+.searchbar > div{
+    /* padding: 9px; */
+    border-radius: 15px;
+    height: 32px;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    background-color: white;
+    justify-content: start;
+    align-items: center;
+}
+
+.searchbar > div > input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left:5px ;
+    background-color: none;
+}
+.searchbar > div > input::placeholder{
+    font-style: italic;
+}
+.searchbar > div > svg{
+    position: absolute;
+    right: 0;
+    height: 18px;
+    width: 18px;
+    margin-right: 2px;
+}
+
+.navbar > nav > ul > li:hover{
+    background-color: seagreen;
+}
