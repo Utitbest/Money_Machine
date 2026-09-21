@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "RobotBold";
+    src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: "RobotRegular";
+    src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+input{
+    font-family:"RobotRegular", sans-serif ;
+}
+button{
+    font-family:"RobotRegular", sans-serif ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f2145;
+}
+
+#parentContainer{
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+}
+
+.parent1{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.stay{
+    font-family: "RobotBold", sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.parent1 > p{
+    font-size: 16px;
+    font-family: "RobotRegular", sans-serif;
+    color: white;
+    margin-block: 1em;
+}
+
+.parent1 > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 2.5em;
+    min-width: 150px;
+} 
+
+.parent1 > ul > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.parent1 > ul > li > p{
+    font-size: 16px;
+    font-family: "RobotRegular", sans-serif;
+    word-break: break-all;
+    color: white;
+}
+
+.parent1 > ul > li > img{
+    width: 25px;
+    height: 25px;
+}
+.Form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+    margin-top: 1em;
+}
+.Form > label{
+    font-size: 16px;
+    width: 54%;
+    color: white;
+    font-family: "RobotRegular", sans-serif;
+}
+.Form > input{
+    width: 54%;
+    padding: 10px 5px;
+    outline: none;
+    border: solid white 2px;
+    background: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.Form > button{
+    width: 54%;
+    padding: 10px 5px;
+    outline: none;
+    border: solid white 2px;
+    background: none;
+    font-size: 16px;
+    color:#1f2145 ;
+    border-radius: 5px;
+    background: white;
+}
+.Form > button:hover{
+    background: linear-gradient(60deg, rgb(246, 37, 0), rgb(220, 62, 34), rgb(213, 82, 59));
+    color: white;
+}
+
+.parent2{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SiteImg{
+    width: 100%;
+    border-radius: 15px;
+    height: 90%;
+    background: url("./assets/illustration-sign-up-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 760px){
+    #parentContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+    .parent1{
+        order:2;
+        width: 100%;
+    }
+    .Form > label{
+        width: 90%;
+    }
+    .Form > input{
+        width: 90%;
+    }
+    .Form > button{
+        width: 90%;
+    }
+    .parent1 > ul{
+        width: 90%;
+        padding: 0;
+    }
+    .parent1 > p{
+        width: 90%;
+    }
+    .parent1 > p > br{
+        display: none;
+    }
+    .stay{
+        width: 90%;
+    }
+    .parent2{
+        width: 100%;
+        align-items: start;
+        
+    }
+    .SiteImg{
+        background: url("./assets/illustration-sign-up-mobile.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
