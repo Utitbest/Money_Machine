@@ -11,6 +11,8 @@
 //  holds a value you can use and change later.
 
 const Ptag = document.getElementById("badgy")
+const ButtonSum = document.getElementsByClassName("dividder")[0]
+
 
 let Hand = "Hello World!"
 
@@ -216,3 +218,110 @@ Ptag.textContent = cone // true or false
 // }else{
 //     Ptag.textContent = "Two"
 // }
+
+// Javascript Function:
+// Definition: A function is a reusable, 
+// named block of code that performs a task. 
+// Write the logic once, run it as 
+// many times as needed.
+
+// Code example:
+// The function keyword, then a name, 
+// then parentheses containing parameters. 
+// name here is a parameter, a placeholder for 
+// whatever gets passed in.
+const rr = 6 
+const tt = 1
+
+
+
+ButtonSum.addEventListener('click', ()=>{
+    const Input1 = document.getElementById("inputse1")
+    const Input2 = document.getElementById("inputse2")
+
+    if(Input1.value == "" || Input2.value == ""){
+        Ptag.textContent = "Type into the input fields"
+        return;
+    }
+
+    Calculator(Input2.value, Input1.value) 
+})
+
+function Calculator(tee, mrkebee){
+   const t = Number(tee) + Number(mrkebee)
+   Ptag.textContent = `the correct answer to the calculation is ${t}`
+}
+
+// Arrow Function
+const GreatMan = (a, b)=>{
+    a + b
+}
+
+
+console.log(GreatMan(4, 6))
+
+
+let age = 20;
+
+if (age < 13) {
+  console.log("Child");
+}else if (age < 18) {
+  console.log("Teenager");
+}else if(age < 19){
+    console.log("Still a Teenger")
+} else {
+  console.log("Adult");
+}
+
+
+// Tenary Operator:
+
+const CheckCond = age >= 18 ? "Teenager" : "Adult"
+
+console.log(CheckCond)
+
+
+
+
+function canVote(age){
+    if(age >= 18){
+        console.log(true)
+    }else{
+        console.log(false)
+    }
+} 
+
+function getGrade(score){
+    if(score >= 90){
+        console.log("A")
+    }else if(score >= 80){
+        console.log("B")
+    }else if(score >= 70){
+        console.log("C")
+    }else{
+        console.log("F")
+    }
+}
+
+const getGrade1 = (score)=>{ //Arrow function
+    if(score >= 90){
+        console.log("A")
+    }else if(score >= 80){
+        console.log("B")
+    }else if(score >= 70){
+        console.log("C")
+    }else{
+        console.log("F")
+    }
+}
+
+getGrade1(100)
+getGrade1(85)
+getGrade1(40)
+canVote(43) 
+canVote(18)
+canVote(12)
+
+const CheckCond1 = age >= 18 ? "Teenager" : "Adult"
+
+// Assignment
