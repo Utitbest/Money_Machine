@@ -324,4 +324,131 @@ canVote(12)
 
 const CheckCond1 = age >= 18 ? "Teenager" : "Adult"
 
-// Assignment
+
+// Javascript Loop;
+// Loops — The for Loop
+
+// Definition: A loop repeats a block of code until a condition stops 
+// being true.
+
+// Why it matters: printing 1 to 100 without a loop means 100 lines. 
+// With a loop it is 3 lines, and it still works if the list grows to 10,000 items.
+
+// Analogy: running laps. Check whether you have done enough laps, run one, 
+// add one to the counter, and check again.
+
+// for
+// forEach Loop
+// while Loop
+// do while
+// for in
+// for of
+
+let ten = ["Godson", "boy", "girl", "Adiaho", "Utitofon", "Favour", "hello"]
+let ten1 = 20
+
+// for(let i = 0; i < ten1; i){
+
+//     if(i === 8){
+//         break
+//     }
+
+//     const spans = document.createElement("span")
+//     spans.innerHTML = i
+//     spans.style.color = "red"
+//     spans.style.border = " 1px solid green"
+//     spans.style.padding = "10px"
+//     spans.style.display = "block"
+//     Ptag.appendChild(spans)
+
+// }
+console.log("Array Length", ten.length)
+
+ten.forEach((r, u)=>{
+    const spans = document.createElement("span")
+    spans.innerHTML = r
+    spans.style.color = "red"
+    spans.style.border = " 1px solid green"
+    spans.style.padding = "10px"
+    spans.style.display = "block"
+    spans.addEventListener("click", ()=>{
+        
+    })
+    Ptag.appendChild(spans)
+})
+
+
+// Loops — while, do...while, break & continue
+// while: use it when you do not know in advance how many times to repeat.
+
+let count = 3;
+
+
+count = "counts"
+while (count > 0) {
+    console.log(count);
+    count--;
+}
+console.log("Liftoff!");// 3, 2, 1, Liftoff!
+
+// Warning: every loop needs something inside that moves it toward stopping. 
+// If the condition can never become false, the loop never ends. That is an infinite loop.
+
+// do...while: the body always runs at least once, 
+// because the condition is checked after the first round.
+
+let attempts = 0;
+do {
+    attempts++;
+    console.log(`Attempt ${attempts}`);
+} while (attempts > 3); 
+
+
+// Javascript Array
+
+const arr = ["Happy", "Lord is my head", 45, true, "the is a ball"];
+
+
+// Array methods in Javascripts
+// includes
+// indexOf
+// join
+// slice
+// splice
+// push
+// pop
+// shift 
+// unshift
+
+
+// const printarr = arr.includes(50) return true or false
+// const printarr = arr.indexOf(4) return the index position of the value
+// const printarr = arr.join(' ') use to join array remove the bracket and the strings even the comma
+// const printarr = arr.slice(1, 3) return the section of an array depending on the paramter pass to it, the first parameter is start index and the second is were the stop. 
+// const printarr = arr.splice(1, 0, "hello fool") 
+// const printarr = arr.push("Utitbest") appends a new items to the end of the array and return the new length
+// const printarr = arr.pop() removing last items of the array 
+// const printarr = arr.shift() remove the first item of the array 
+// const printarr = arr.unshift("Favour") 
+
+// console.log(printarr)
+// console.log(arr)
+
+
+// C/W
+
+// create array with ten items inside it:
+
+// 1. What javascript method can be use to know the index number of array items?
+// 2. How can we print the value of and array item with it index number?
+// 3. What value will the array method include returns?
+// 4. How many parameter does the slice method accepts?
+// 5. Which array method changes the original array if use?
+// 6. Remove 3 items from your array starting index 2 and let the deleteCount be 3, 
+// and replace it with 6 items of your choice
+// 7. With your understanding of the Join() array method, 
+// give a brief explaination of hw it works
+// 8. Which javascript method remove the last Item of an array, 
+// and which one insert item to the beginning of the array
+// 9.Define array?
+// 10. Does array accept different data type, respond with yes or no
