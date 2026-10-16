@@ -1,5 +1,6 @@
 // Welcome to javaScript
 
+
 // What is JavaScript: ?
 // Definition: JavaScript is a programming language that 
 // runs in the browser and gives web pages behaviour
@@ -303,6 +304,11 @@ function getGrade(score){
     }
 }
 
+(t)=>{
+    dkdfjfsdf
+}
+
+
 const getGrade1 = (score)=>{ //Arrow function
     if(score >= 90){
         console.log("A")
@@ -362,7 +368,6 @@ let ten1 = 20
 //     Ptag.appendChild(spans)
 
 // }
-console.log("Array Length", ten.length)
 
 ten.forEach((r, u)=>{
     const spans = document.createElement("span")
@@ -406,7 +411,12 @@ do {
 
 // Javascript Array
 
-const arr = ["Happy", "Lord is my head", 45, true, "the is a ball"];
+const arr = [   
+                "Happy", 
+                "Lord is my head", 
+                45, true, 
+                "the is a ball"
+            ];
 
 
 // Array methods in Javascripts
@@ -452,3 +462,69 @@ const arr = ["Happy", "Lord is my head", 45, true, "the is a ball"];
 // and which one insert item to the beginning of the array
 // 9.Define array?
 // 10. Does array accept different data type, respond with yes or no
+
+
+// Javascript Object
+// Objects — Labelled Properties
+
+// Definition: An object is a collection of key-value pairs that describes one thing.
+// Each key is a label, and each value is the data stored under it.
+
+// Array versus object: an array is a list of things accessed by position. 
+// An object is one thing described by labelled properties, accessed by name.
+
+
+Object
+let nn = 50
+
+const wrapper = {
+    height: '',
+    age: '300px',
+    backgroundcolor: 'gray',
+    name: '',
+    padding: '10px',
+    flexdirection: true,
+    display: 'flex',
+    gap: 456,
+    great: ()=>{},
+    hel: "Utitbest"
+}
+
+wrapper.name;        // "Ada", dot notation
+wrapper["age"];      // 29, bracket notation
+const key = "name";
+wrapper[key];        // "Ada", key stored in a variable
+wrapper.key;         // undefined, looks for a property literally called key
+wrapper.email = "utitbesta@gmail.com"
+wrapper.hub = 567
+delete wrapper.hel 
+
+
+// Define the following in your understanding
+// Object.keys: It's use in getting all the keys in an object
+// Object.values: It's use in getting all the values in and object
+// Object.entries
+// Object.fromEntries
+
+const getKeywords = Object.fromEntries(Object.entries(wrapper).filter((_, e) => e !== ""))
+
+console.log(getKeywords)
+console.log(wrapper)
+
+
+// Arrays of Objects — The Real-World Shape
+// This is the most important pattern in the lesson. 
+// When we fetch data from an API in Month 
+// 2, and when our backend sends data in Month 4, 
+// it arrives as an array of objects.
+
+const students = [
+  { name: "Ada", score: 82 },
+  { name: "Grace", score: 91 },
+  { name: "Linus", score: 67 },
+  { name: "valuess",score: 45}
+];
+
+for(s of students){
+    console.log(s.score)
+}
