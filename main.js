@@ -528,3 +528,54 @@ const students = [
 for(s of students){
     console.log(s.score)
 }
+
+
+
+// What Is the DOM?
+
+// Definition: The DOM (Document Object Model) is the browser's 
+// live representation of your HTML page, 
+// built as a tree of objects that JavaScript can read and change.
+
+// Analogy: your HTML file is the blueprint. The browser builds
+//  the house from it, and the DOM is that house. JavaScript can
+//   repaint a wall in the house, but the blueprint file stays exactly as it was. 
+// Refresh the page and the house is rebuilt from the original blueprint.
+
+console.clear()
+
+const IdElement = document.getElementById("paragraphID");
+const great = document.querySelector(".great");
+
+
+// IdElement.textContent = "Hello my content has been change or modified with javascript";
+
+// const ClassElement = document.getElementsByClassName("paragraphCLASS")[1];
+
+// console.log(ClassElement);
+
+// const intro = document.querySelector(".paragraphID");
+// console.log(intro)
+
+// const SelectAll = document.querySelectorAll(".paragraphCLASS")
+
+// SelectAll.forEach(e =>{
+//     let att = e.getAttribute("click")
+//     if(att === "cli2"){
+//         e.addEventListener("click", ()=>{
+//             console.log("Hello bro you've just click me")
+//         })
+//     }
+// })
+
+// IdElement.textContent = "Hello, DOM!";
+IdElement.style.color = "red"
+great.src = "./assets/calculator-2374442_1280.png"
+great.setAttribute("Willams", "I just set an attibute")
+great.getAttribute("src")
+great.removeAttribute("Willams")
+great.classList.add("bestman")
+// great.classList.remove("great")
+great.id = "love"
+
+
