@@ -578,4 +578,51 @@ great.classList.add("bestman")
 // great.classList.remove("great")
 great.id = "love"
 
+// C/W 
 
+// 1. create and html element in your html file and select it with
+// javascript file link to the html file. Declare it with the let keyword 
+// (use the id method to select the element in javascrpt) you know what 
+// to do with the element at this point
+
+// 2. add a classname to the selected element in javascript (multiple classname)
+
+// 3. create 6 element with the same classname in your html
+// file select the second element with the classname and change it's textcontent
+
+// 4. loop the multiple element with the same class name and with forEach method, and 
+// log the text content in it.
+
+// 5. Assign a single attribute to those element after looping them
+
+// 6. Define DOM in your own understanding outside the one I give.
+
+const ParentElement = document.querySelector(".JavaScriptElements");
+
+function usingJavascriptToCreateElement(text){
+    const SecDiv1 = document.createElement('div')
+    SecDiv1.className = "secondparent";
+    
+    const H1Element = document.createElement("h1")
+    H1Element.textContent = "Hello, Welcome to my Page"
+
+    const andotherDiv = document.createElement("div")
+    andotherDiv.id = "andotherman"
+    andotherDiv.innerHTML = `
+        <div class="hellomrman">
+            <div>${text}</div>
+        </div>
+    `;
+
+
+
+    SecDiv1.append(H1Element, andotherDiv)
+    ParentElement.append(SecDiv1)
+}
+
+usingJavascriptToCreateElement("Hello am a");
+
+// 1. create a div element in your html file as a parent element 
+// select the div element in javascript and create other elements and append 
+// to it. pass a text to the element you'll create in javascript using 
+// parameter
