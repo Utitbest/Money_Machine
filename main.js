@@ -626,3 +626,26 @@ usingJavascriptToCreateElement("Hello am a");
 // select the div element in javascript and create other elements and append 
 // to it. pass a text to the element you'll create in javascript using 
 // parameter
+
+// Javascript EventListener
+
+// Click
+// dbclick
+
+const EventList = document.getElementById("JSEvent")
+
+
+
+// EventList.addEventListener("click", (e)=>{
+//     alert("Hello dear, welcome to JS event")
+// })
+
+// EventList.addEventListener("dblclick", (e)=>{
+//     if(e.key == "F12"){
+//         alert("inspect")
+//         window.onInsp
+//         return false
+//     }
+// })
+
+

@@ -89,12 +89,22 @@ body{
     gap: 1em;
     margin-top: 1em;
 }
-.Form > label{
+.Form > div > label{
     font-size: 16px;
     width: 54%;
     color: white;
     font-family: "RobotRegular", sans-serif;
 }
+.Form > div{
+    width: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Form > div > p{
+    color: tomato;
+}
+
 .Form > input{
     width: 54%;
     padding: 10px 5px;
@@ -104,6 +114,12 @@ body{
     border-radius: 5px;
     color: white;
 }
+
+
+.changeBorder{
+    border-color: tomato !important;
+}
+
 
 .Form > button{
     width: 54%;
@@ -115,6 +131,7 @@ body{
     color:#1f2145 ;
     border-radius: 5px;
     background: white;
+    cursor: pointer;
 }
 .Form > button:hover{
     background: linear-gradient(60deg, rgb(246, 37, 0), rgb(220, 62, 34), rgb(213, 82, 59));
@@ -150,7 +167,7 @@ body{
         order:2;
         width: 100%;
     }
-    .Form > label{
+    .Form > div{
         width: 90%;
     }
     .Form > input{

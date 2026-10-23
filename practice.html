@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
     <title>My First Project Using CSS | Utitbest</title>
+    <script src="./practice.js" defer></script>
 </head>
 <body>
     <div id="parentContainer">
@@ -32,11 +33,14 @@
                     <p>And much more</p>
                 </li>
             </ul>
-            <div class="Form">
-                <label for="Email">Email Address</label>
+            <form class="Form">
+                <div>
+                    <label for="Email">Email Address</label>
+                    <p class="errorTag"></p>
+                </div>
                 <input placeholder="example@gmail.com" type="email" id="Email">
-                <button>Subscribe for monly newsletter</button>
-            </div>
+                <button id="SubmitBud">Subscribe for monly newsletter</button>
+            </form>
         </section>
 
         <section class="parent2">
